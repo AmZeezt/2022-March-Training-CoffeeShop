@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(/main/resourses/coffee1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5));
+    position: fixed;
+    left: 1%;
+    width: 12%;
+    height: 100%;
+}
+
+main {
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(1px);
+    box-sizing: border-box;
+    position: relative;
+    left: 14%;
+    width: 85%;
+    padding: 3%;
+}
+
+.select_button {
+    background-color: #ce7f3a;
+    padding: 3%;
+    border: 3px solid black;
+    border-radius: 15px;
+    transition: all 0.3s linear 0.1s;
+}
+
+.select_button:hover {
+    background-color: #d5d5e1;
+}
+
+#grid_selector {
+    position: fixed;
+    left: 1%;
+    width: 12%;
+    top: 5%;
+    bottom: 20%;
+    display: grid;
+    gap: 1%;
+    justify-items: center;
+    align-items: center;
+}
+
+.select_button_text {
+    font-family: 'Sansita Swashed', cursive;
+    font-weight: bold;
+    font-size: 70px;
+    margin-left: 1%;
+    margin-right: 1%;
+    text-align: center;
+}
+
+.flexbox_item_text {
+    font-family: 'Sansita Swashed', cursive;
+}
+
+#flexbox_photo_album {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5));
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: wrap row;
+    border-radius: 15px;
+}
+
+.flexbox_item {
+    height: 200px;
+    background-image: url(/main/resourses/coffee_eth.jpg);
+    background-position: center;
+    background-size: cover;
+    flex: 1 1 200px;
+    margin: 1%;
+    border-radius: 10px;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 2%;
+    font-family: 'Sansita Swashed', cursive;
+    font-weight: bold;
+    font-size: 80px;
+
+}
+
+.historical_points_text {
+    font-size: 30px;
+    text-align: justify;
+    margin-bottom: 2%;
+    font-family: 'Sansita Swashed', cursive;
+}
+
+#grid_mosaic {
+    box-sizing: border-box;
+    padding: 1%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5));
+    border-radius: 15px;
+    height: 800px;
+    width: 100%;
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+    gap: 1%;
+}
+
+.mosaic_item {
+    background-image: url(/main/resourses/coffee_eth.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+
+}
+
+a {
+    cursor: default;
+    color: black;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 2116px) and (min-width: 1871px) {
+    .historical_points_text {
+        font-size: 26px;
+    }
+    h3 {
+        font-size: 70px;
+    }
+    .select_button_text {
+        font-size: 60px;
+    }
+}
+
+@media only screen and (max-width: 1871px) and (min-width: 1432px) {
+    .historical_points_text {
+        font-size: 22px;
+    }
+    h3 {
+        font-size: 58px;
+    }
+    .select_button_text {
+        font-size: 46px;
+    }
+}
+
+@media only screen and (max-width: 1432px) and (min-width: 1115px) {
+    .historical_points_text {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 42px;
+    }
+    .select_button_text {
+        font-size: 36px;
+    }
+}
+
+@media only screen and (max-width: 1115px) and (min-width: 862px) {
+    .historical_points_text {
+        font-size: 16px;
+    }
+    h3 {
+        font-size: 32px;
+    }
+    .select_button_text {
+        font-size: 28px;
+    }
+}
+
+@media only screen and (max-width: 862px) and (min-width: 778px) {
+    #grid_mosaic {
+        height: 600px;
+    }
+    .historical_points_text {
+        font-size: 14px;
+    }
+    h3 {
+        font-size: 28px;
+    }
+    .select_button_text {
+        font-size: 22px;
+    }
+    #grid_mosaic {
+        grid-template: 1fr 1fr 1fr / 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 778px) and (min-width: 575.98px) {
+    #grid_mosaic {
+        height: 600px;
+    }
+    .historical_points_text {
+        font-size: 14px;
+    }
+    h3 {
+        font-size: 26px;
+    }
+    .select_button_text {
+        font-size: 18px;
+    }
+    #grid_mosaic {
+        grid-template: 1fr 1fr 1fr / 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 575.98px) and (min-width: 313px) {
+    #grid_mosaic {
+        height: 400px;
+    }
+    header {
+        position: relative;
+        width: 98%;
+        right: 1%;
+    }
+    #grid_selector {
+        position: relative;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-template: 1fr / 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 1%;
+        width: 98%;
+        left: 1%;
+        right: 1%;
+        padding: 1% 0;
+    }
+    main {
+        box-sizing: border-box;
+        position: relative;
+        left: 1%;
+        width: 98%;
+        padding: 3%;
+    }
+    .historical_points_text {
+        font-size: 12px;
+    }
+    h3 {
+        font-size: 22px;
+    }
+    .select_button_text {
+        font-size: 14px;
+    }
+    #grid_mosaic {
+        grid-template: 1fr 1fr 1fr / 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 313px){
+    #grid_mosaic {
+        height: 400px;
+    }
+    header {
+        background-color: lightslategrey;
+        position: relative;
+        width: 98%;
+        right: 1%;
+    }
+    #grid_selector {
+        position: relative;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-template: 1fr 1fr / 1fr 1fr 1fr;
+        gap: 1%;
+        width: 98%;
+        left: 1%;
+        right: 1%;
+        padding: 1% 0;
+    }
+    main {
+        box-sizing: border-box;
+        position: relative;
+        left: 1%;
+        width: 98%;
+        padding: 3%;
+    }
+    .historical_points_text {
+        font-size: 12px;
+    }
+    h3 {
+        font-size: 22px;
+    }
+    .select_button_text {
+        font-size: 14px;
+    }
+    #grid_mosaic {
+        grid-template: 1fr 1fr 1fr / 1fr 1fr;
+    }
+}

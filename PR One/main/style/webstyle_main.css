@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #ce7f3a;
+    border-bottom: 1px solid #b65b1e;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+
+ul {
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+    border: 3px solid black;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 10px 10px 15px 10px;
+    margin: 15px 10px;
+    font-family: 'Sansita Swashed', cursive;
+    transition: all 0.3s linear 0.1s;
+    
+}
+
+li:hover {
+    background-color: aliceblue;
+}
+
+a {
+    cursor: default;
+    color: black;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    position: relative;
+    width: 100%;
+    background-color: aliceblue;
+    top: 98px;
+    padding-bottom: 60px;
+}
+
+.main_title {
+    width: 100%;
+    background-image: url(/main/resourses/coffee1.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    z-index: 6;
+}
+#white_strip {
+    height: 6%;
+    width: 100%;
+    background-color: #d5d5e1;
+    position: absolute;
+    top: 250px;
+    opacity: 50%;
+    z-index: 6;
+}
+
+h3 {
+    font-size: 200px;
+    position: relative;
+    padding: 40px;
+    color: #ce7f3a;
+    text-shadow: -3px 0 white, 0 3px white, 3px 0 white, 0 -3px white;
+    font-family: 'Sansita Swashed', cursive;
+    z-index: 8;
+}
+
+h6 {
+    font-size: 80px;
+    padding: 10px 5px 15px 10px;
+    color: #ce7f3a;
+    text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+}
+
+#pick_coffee {
+    position: relative;
+}
+
+#BRA, #ETH, #IND, #MOR, #TUR {
+    position: relative;
+    text-align: center;
+    width: 80%;
+    border: 3px solid black;
+    color: #ce7f3a;
+    margin: 40px 10%;
+    border-radius: 25px;
+    transition: all 1.5s linear;
+}
+
+#BRA:hover, #ETH:hover, #IND:hover, #MOR:hover, #TUR:hover {
+    background: aliceblue;
+}
+
+#BRA {
+    background-image: url(/main/resourses/coffee_bra.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#ETH {
+    background-image: url(/main/resourses/coffee_eth.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#IND {
+    background-image: url(/main/resourses/coffee_ind.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#MOR {
+    background-image: url(/main/resourses/coffee_mor.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#TUR {
+    background-image: url(/main/resourses/coffee_tur.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.country_name {
+    position: relative;
+    opacity: 100%;
+    display: inline-block;
+    font-family: 'Sansita Swashed', cursive;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: #ce7f3a;
+    position: relative;
+    top: 40px;
+}
+
+p {
+    position: relative;
+    width: 98%;
+    left: 2%;
+    top: 8%;
+    font-family: 'Sansita Swashed', cursive;
+    font-size: 20px;
+}
+
+@media (max-width: 575.98px) {
+    main {
+        top: 0;
+    }
+    header {
+        position: relative;
+        padding-top: 6px;
+    }
+    footer {
+        top: 0;
+    }
+    li {
+        display: block;
+    }
+    #white_strip {
+        top: 130px;
+        height: 4%;
+    }
+    li {
+        font-size: 12px;
+    }
+    h3 {
+        font-size: 80px;
+    }
+    h6 {
+        font-size: 24px;
+    }
+     p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 767.98px) and (min-width: 576px){
+    main {
+        top: 76px;
+    }
+    #white_strip {
+        top: 140px;
+        height: 4%;
+    }
+    li {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 96px;
+    }
+    h6 {
+        font-size: 42px;
+    }
+    p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 991.98px) and (min-width: 768px){
+    main {
+        top: 86px;
+    }
+    #white_strip {
+        top: 170px;
+        height: 5%;
+    }
+    li {
+        font-size: 22px;
+    }
+    h3 {
+        font-size: 110px;
+    }
+    h6 {
+        font-size: 48px;
+    }
+    footer {
+        height: 120px;
+    }
+}
+
+@media (max-width: 1199.98px) and (min-width: 992px){
+    main {
+        top: 94px;
+    }
+    #white_strip {
+        top: 190px;
+        height: 5%;
+    }
+    li {
+        font-size: 26px;
+    }
+    h3 {
+        font-size: 130px;
+    }
+    h6 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 1399.98px) and  (min-width:1200px){
+    #white_strip {
+        top: 220px;
+    }
+    li {
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 160px;
+    }
+    h6 {
+        font-size: 60px;
+    }
+}
