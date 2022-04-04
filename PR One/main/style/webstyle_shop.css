@@ -22,6 +22,7 @@ header {
 
 .flex_header_item:hover {
     background-color: #d5d5e1;
+    transform: scale(1.02);
 }
 
 .flex_header_text {
@@ -42,7 +43,10 @@ a {
 main {
     box-sizing: border-box;
     padding: 2%;
-    background-color: #d5d5e1;
+    animation-name: background_animation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -67,8 +71,24 @@ main {
     border-radius: 15px;
 }
 
+.grid_panel_box_item:hover {
+    transform: scale(1.02);
+}
+
 .grid_panel_box_item_text {
     font-family: 'Sansita Swashed', cursive;
+}
+
+@keyframes background_animation {
+    0% {
+        background: linear-gradient(35deg, aliceblue, #cdcdd7, aliceblue, #cdcdd7);
+    }
+    50% {
+        background: linear-gradient(35deg, #cdcdd7, aliceblue, #cdcdd7, aliceblue);
+    }
+    100% {
+        background: linear-gradient(35deg, aliceblue, #cdcdd7, aliceblue, #cdcdd7);
+    }
 }
 
 @media screen and (max-width: 2131px) and (min-width: 1420px){
